@@ -1,0 +1,110 @@
+.main * {
+  //   border: 1px solid red;
+  transition: all 0.2s ease-in;
+}
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  max-width: 1160px;
+  margin: auto;
+  color: blue;
+}
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.article {
+  height: 450px;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  & p {
+    color: white;
+  }
+  & ul {
+    display: flex;
+    flex-direction: row;
+    & li {
+      margin-right: 30px;
+      cursor: pointer;
+      &:hover use {
+        fill: white;
+      }
+      & svg {
+        width: 50px;
+        height: 50px;
+        & use {
+          fill: #ff007c;
+        }
+      }
+    }
+  }
+}
+.content {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  width: 550px;
+  position: relative;
+}
+.circle {
+  display: inline-block;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background-color: orange;
+  box-shadow: 1px 0px 26px #600072;
+}
+.content-img::before {
+  content: "";
+  width: 336px;
+  height: 410px;
+  display: inline-block;
+  position: absolute;
+  top: 43%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  background-image: url(../imges/Picsart_23-05-20_22-26-28-121.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content-title::before {
+  content: "AIBEKBBIC\aВЕБ РАЗРАБОТЧИК";
+  display: inline-block;
+  position: absolute;
+  top: 85%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: #ff007c;
+  text-shadow: 0px 0px 15px purple;
+  font-size: 80px;
+  font-weight: 900;
+  //   white-space: pre;
+  text-align: center;
+  line-height: 0.8;
+  letter-spacing: -2px;
+}
+.nav {
+  margin: 0 0 40px;
+  & ul {
+    display: flex;
+    flex-direction: row;
+    & .page-active {
+      color: white;
+    }
+    & li {
+      font-size: 30px;
+      margin-right: 35px;
+      color: orange;
+      cursor: pointer;
+      &:hover {
+        color: white;
+        text-shadow: 0px 0px 10px;
+      }
+    }
+  }
+}

@@ -5,10 +5,11 @@
 * {
   font-family: "Yanone Kaffeesatz", sans-serif;
 }
-.header-title span {
+.content-title span {
   font-family: "Righteous", cursive;
 }
+
 .article *,
-.content-title::before {
+.content-body::before {
   font-family: "Wix Madefor Display", sans-serif;
 }

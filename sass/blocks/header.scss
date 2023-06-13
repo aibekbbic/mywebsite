@@ -30,8 +30,9 @@
         cursor: pointer;
 
         &:hover {
-          text-shadow: 0px 0px 10px;
-          border-bottom: 2px solid #00c4ff;
+          color: white;
+          text-shadow: 0px 0px 10px white;
+          border-bottom-color: white;
         }
       }
     }

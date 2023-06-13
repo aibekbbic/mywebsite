@@ -1,6 +1,6 @@
 // header title start
 
-const spans = document.querySelectorAll(".header-title span");
+const spans = document.querySelectorAll(".content-title span");
 
 spans.forEach((span, index) => {
   span.addEventListener("click", (e) => {
@@ -12,6 +12,84 @@ spans.forEach((span, index) => {
 
   setTimeout(() => {
     span.classList.add("active");
-  }, 750 * (index + 1));
+  }, 350 * (index + 1));
 });
 // header title end
+// hidden menu start
+let main = document.querySelector(".main");
+let header_button = document.querySelector(".header-menu-button");
+let nav_list = document.querySelector(".nav-menu-hidden");
+let display = document.querySelector("body");
+
+// hidden menu end
+// show content start
+let contents = document.querySelectorAll(".content");
+let buttons = document.querySelectorAll("[data-m]");
+let articles = document.querySelectorAll(".article");
+
+buttons.forEach(function (item) {
+  item.addEventListener("click", function () {
+    // удаляем все button-active
+    buttons.forEach((item) => {
+      item.classList.remove("page-active");
+    });
+    // добавляем текущему button-active
+    this.classList.add("page-active");
+    // удаляем весь content
+    contents.forEach(function (item) {
+      item.classList.add("content-hidden");
+      item.classList.remove("content");
+      spans.forEach((item) => {
+        item.classList.remove("active");
+      });
+    });
+    // показываем нужный контент
+    let d = this.dataset.m;
+    let content_id = `#${d}`;
+    document.querySelector("#" + d).classList.remove("content-hidden");
+    document.querySelector("#" + d).classList.add("content");
+    if (document.querySelector("#" + d).classList.contains("content")) {
+      let this_span = `${content_id} .content-title span`;
+      document.querySelectorAll(this_span).forEach((item, index) => {
+        setTimeout(() => {
+          item.classList.add("active");
+        }, 350 * (index + 1));
+      });
+    }
+    if (document.querySelector("#content-3").classList.contains("content")) {
+      document.querySelector(".sections-1").style.minHeight = "436px";
+    } else if (
+      document.querySelector("#content-3").classList.contains("content-hidden")
+    ) {
+      document.querySelector(".sections-1").style.minHeight = "205px";
+    }
+
+    articles.forEach((item) => {
+      item.classList.add("article-hidden");
+    });
+    let article_id = `${d}${d}${d}`;
+    document.querySelector("#" + article_id).classList.remove("article-hidden");
+  });
+});
+//modal start
+let article_img = document.querySelectorAll(".article-img img");
+let modal = document.querySelector(".modal");
+let modal_button = document.querySelector(".modal-button");
+let modal_content_img = document.querySelector(".modal-content img");
+let modal_caption = document.querySelector(".modal-caption");
+
+article_img.forEach((item) => {
+  item.addEventListener("click", () => {
+    modal.style.display = "flex";
+    modal_content_img.src = item.src;
+    let alter = item.alt;
+    modal_caption.innerText = alter;
+  });
+});
+
+modal_button.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+// modal end
+

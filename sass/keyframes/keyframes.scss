@@ -66,11 +66,11 @@
   10%,
   40% {
     color: #ff007c;
-    transform: translateY(-48vh) scaleY(1);
+    transform: translateY(-50vh) scaleY(1);
   }
   90% {
     color: #ff007c;
-    transform: translateY(-48vh) scaleY(4);
+    transform: translateY(-20vh) scaleY(4);
   }
 }
 @keyframes balanced {
@@ -85,38 +85,111 @@
   }
 }
 // header title end
-// chevron down start
-@keyframes chevron-element-one {
-  0%,
-  100% {
-    transform: translate(-50%, -50%);
+// content img start
+@keyframes content-img-animation {
+  0% {
+    opacity: 0;
   }
-
-  50% {
-    transform: translate(-50%, 10%);
-    width: 50px;
-    height: 50px;
+  100% {
+    opacity: 1;
   }
 }
-
-@keyframes chevron-element-two {
-  0%,
-  100% {
-    transform: translate(-50%, -50%);
+// content img end
+// content body start
+@keyframes content-body-animation {
+  0% {
+    font-size: 27px;
+    transform: scale(0.1) translate(-1000%, 50%);
+    color: orange;
   }
-
-  50% {
-    transform: translate(-50%, -100%);
-    width: 40px;
-    height: 40px;
+  75% {
+    color: orange;
+  }
+  100% {
+    transform: scale(1.1) translate(-100, 220%);
+    opacity: 1;
   }
 }
-// chevron down end
-// main background start
-@keyframes move {
+@keyframes min-content-body-animation {
+  0% {
+    font-size: 27px;
+    transform: scale(0.1) translate(-1000%, 50%);
+    color: orange;
+  }
+  75% {
+    color: orange;
+  }
   100% {
-    transform: translate3d(0, 0, 1px) rotate(360deg);
+    transform: scale(1.1) translate(-51, 260%);
+    opacity: 1;
   }
 }
-
-// main background end
+// content body end
+// circle start
+@keyframes circle-animation {
+  0% {
+    transform: translateX(500%);
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(180deg, #ff007c);
+  }
+  90% {
+    background: linear-gradient(180deg, #ff007c);
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 1;
+    background: linear-gradient(180deg, #0087ff);
+    box-shadow: 1px 0px 26px #0087ff;
+  }
+}
+@keyframes min-circle-animation {
+  0% {
+    transform: translateX(500%);
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(180deg, orange, orange);
+  }
+  90% {
+    background: linear-gradient(180deg, orange, orange);
+  }
+  100% {
+    transform: translate(-50%, 0);
+    opacity: 1;
+    background: linear-gradient(180deg, #0058ff);
+    box-shadow: 1px 0px 26px #600072;
+  }
+}
+// circle end
+// content animation start
+@keyframes content-animation {
+  0% {
+    transform: rotate3d(1, 1, 1, 121deg);
+  }
+  100% {
+    transform: translateX(0) rotate3d(1, 1, 1, 360deg);
+  }
+}
+// content animation end
+// content hidden start
+@keyframes hidden-content-animation {
+  0% {
+    transform: translateX(0) scale(1);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(500%) scale(0);
+    opacity: 0;
+  }
+}
+// content hidden end
+// modal start
+@keyframes modal-content {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+// modal end

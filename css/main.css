@@ -1699,19 +1699,17 @@ legend {
   top: 15px;
   z-index: 1001;
   font-size: 20px;
-  padding: 9px 15px;
-  -webkit-transform: translate(100%, -60%);
-          transform: translate(100%, -60%);
+  -webkit-transform: translate(300%, -143%);
+          transform: translate(300%, -143%);
   border: none;
-  border-radius: 50%;
-  background-color: #ffffff;
   font-family: "Righteous";
-  color: #000000;
+  color: #ffffff;
   font-weight: 800;
-  text-shadow: 1px 1px 9px black;
+  text-shadow: 1px 1px 9px rgb(255, 255, 255);
   cursor: pointer;
 }
 .modal-button:hover {
+  color: rgb(0, 102, 255);
   text-shadow: 1px 1px 5px rgb(3, 109, 231);
 }
 

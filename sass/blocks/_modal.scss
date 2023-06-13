@@ -2,7 +2,7 @@
   display: none;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   position: fixed;
   z-index: 1000;
   width: 100%;
@@ -17,10 +17,13 @@
   top: 15px;
   z-index: 1001;
   font-size: 20px;
-  transform: translate(183%, -167%);
+  padding: 9px 15px;
+  transform: translate(100%, -60%);
   border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
   font-family: "Righteous";
-  color: #f9f9f9;
+  color: #000000;
   font-weight: 800;
   text-shadow: 1px 1px 9px black;
   cursor: pointer;
@@ -33,7 +36,7 @@
   position: relative;
   width: 500px;
   height: 500px;
-  margin-bottom: 20px;
+  margin: 100px 0 20px;
   animation: modal-content 0.4s ease-in;
 }
 .modal-content img {

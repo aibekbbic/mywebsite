@@ -1,26 +1,35 @@
 /* Reset and base styles  */
+body * {
+  // border: 1px solid red;
+}
+html {
+  height: 100%;
+}
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // row-gap: 10px;
   padding: 0px;
   margin: 0px;
   border: none;
-  // height: 100vh;
+  height: 100%;
+  width: 100%;
   background: rgb(0, 0, 0);
-  background: linear-gradient(
-    325deg,
-    rgb(0, 0, 0) 0%,
-    rgb(20 0 25) 50%,
-    rgb(0, 0, 0) 100%
-  );
-  background-position: center;
+  background-image: url(../imges/peakpx.jpg);
+  background-position: bottom;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   scroll-behavior: smooth;
+  row-gap: 20px;
 }
 * {
   padding: 0px;
   margin: 0px;
   border: none;
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 *,
@@ -31,12 +40,12 @@ body {
 
 :focus,
 :active {
-  /*outline: none;*/
+  // outline: none;
 }
 
 a:focus,
 a:active {
-  /* outline: none;*/
+  // outline: none;
 }
 
 /* Links */

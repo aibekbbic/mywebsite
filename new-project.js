@@ -72,24 +72,52 @@ buttons.forEach(function (item) {
   });
 });
 //modal start
-let article_img = document.querySelectorAll(".article-img img");
-let modal = document.querySelector(".modal");
-let modal_button = document.querySelector(".modal-button");
-let modal_content_img = document.querySelector(".modal-content img");
-let modal_caption = document.querySelector(".modal-caption");
+function openModal() {
+  document.getElementById("myModal").style.display = "flex";
+  if ((document.getElementById("myModal").style.display = "flex")) {
+    document.querySelector("body").style.overflowY = "hidden";
+  }
+}
 
-article_img.forEach((item) => {
-  item.addEventListener("click", () => {
-    modal.style.display = "flex";
-    modal_content_img.src = item.src;
-    let alter = item.alt;
-    modal_caption.innerText = alter;
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+  if ((document.getElementById("myModal").style.display = "none")) {
+    document.querySelector("body").style.overflowY = "auto";
+  }
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  let article_img = document.querySelector(".mySlides img");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+  captionText.innerText = article_img.forEach((item, index) => {
+    item.alt;
   });
-});
-
-modal_button.addEventListener("click", () => {
-  modal.style.display = "none";
-});
-
-// modal end
-
+} // modal end

@@ -187,7 +187,7 @@ legend {
   font-size: 30px;
   margin-left: 35px;
   padding: 26px 0 24px;
-  color: #00c4ff;
+  color: #0087ff;
   border-bottom: 2px solid transparent;
   cursor: pointer;
 }
@@ -700,10 +700,10 @@ legend {
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
     opacity: 1;
-    background: -webkit-gradient(linear, left top, left bottom, from(#0058ff));
-    background: linear-gradient(180deg, #0058ff);
-    -webkit-box-shadow: 1px 0px 26px #600072;
-            box-shadow: 1px 0px 26px #600072;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0087ff));
+    background: linear-gradient(180deg, #0087ff);
+    -webkit-box-shadow: 1px 0px 26px #0087ff;
+            box-shadow: 1px 0px 26px #0087ff;
   }
 }
 @keyframes min-circle-animation {
@@ -723,10 +723,10 @@ legend {
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
     opacity: 1;
-    background: -webkit-gradient(linear, left top, left bottom, from(#0058ff));
-    background: linear-gradient(180deg, #0058ff);
-    -webkit-box-shadow: 1px 0px 26px #600072;
-            box-shadow: 1px 0px 26px #600072;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0087ff));
+    background: linear-gradient(180deg, #0087ff);
+    -webkit-box-shadow: 1px 0px 26px #0087ff;
+            box-shadow: 1px 0px 26px #0087ff;
   }
 }
 @-webkit-keyframes content-animation {
@@ -920,7 +920,7 @@ legend {
   height: 50px;
 }
 .main .container .sections-1 address ul li svg use {
-  fill: #0058ff;
+  fill: #0087ff;
 }
 .main .container .sections-2 {
   position: relative;
@@ -1709,8 +1709,8 @@ legend {
   cursor: pointer;
 }
 .modal-button:hover {
-  color: rgb(0, 102, 255);
-  text-shadow: 1px 1px 5px rgb(3, 109, 231);
+  color: #0087ff;
+  text-shadow: 1px 1px 5px #0087ff;
 }
 
 .modal-content {

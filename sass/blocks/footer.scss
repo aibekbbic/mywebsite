@@ -1,42 +1,38 @@
-.footer {
-  background: linear-gradient(90deg, black, black, #e400ff26);
-  box-shadow: 1px 1px 25px purple;
+.header * {
+  transition: all 0.2s ease-in;
+}
+.header {
   text-transform: uppercase;
+  overflow-x: clip;
 
-  .footer-main {
+  .nav {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    max-width: 1160px;
-    min-height: 80px;
     margin: 0 auto;
-    color: white;
+    max-width: 1160px;
 
-    & > * {
-      width: 200px;
+    .nav-menu {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      font-size: 14px;
-      max-width: 200px;
-    }
-    & .contacts {
-      width: auto;
+      width: 100%;
+      flex-direction: row;
+      justify-content: end;
+      .page-active {
+        color: white;
+        border-bottom-color: white;
+      }
 
-      & svg {
-        width: 40px;
-        max-width: none;
-        height: 40px;
-        margin: 0 15px;
+      li {
+        font-size: 30px;
+        margin-left: 35px;
+        padding: 26px 0 24px;
+        color: #0087ff;
+        border-bottom: 2px solid transparent;
+        cursor: pointer;
 
-        &:hover use {
-          fill: orange;
-        }
-
-        & use {
-          fill: white;
-          transition: fill 0.2s ease-in;
+        &:hover {
+          color: white;
+          text-shadow: 0px 0px 10px white;
+          border-bottom-color: white;
         }
       }
     }
@@ -44,54 +40,43 @@
   // media
   // 1440
   @media (max-width: 1200px) {
-    & .footer-main {
+    & .nav {
       margin: 0 30px;
     }
   }
   // 960
   @media (max-width: 960px) {
-    // empty
+    & .nav .nav-menu li {
+      font-size: 27px;
+    }
   }
   // 840
   @media (max-width: 840px) {
-    & {
-      display: inline-table;
-      background: linear-gradient(270deg, black, black, #e400ff26);
-    }
-
-    & .footer-main {
+    & .nav {
+      justify-content: end;
       margin: 0 20px;
+      position: relative;
     }
-
-    & .footer-main div {
-      width: 160px;
-    }
-
-    & .footer-main .contacts a svg {
-      width: 30px;
-      height: 30px;
+    & .nav .nav-menu li {
+      padding: 16px 0 14px;
+      font-size: 17px;
     }
   }
   // 600
   @media (max-width: 500px) {
-    &.footer-main {
+    & .nav {
       margin: 0 10px;
     }
-
-    & .footer-main {
-      flex-direction: column;
-      align-items: center;
-      margin: 20px;
-      row-gap: 10px;
+    & .nav .nav-menu li {
+      margin-left: 20px;
+      padding: 16px 0 5px;
+      font-size: 16px;
     }
-
-    & .footer-main div {
-      font-size: 10px;
-    }
-
-    & .footer-main .contacts a svg {
-      width: 25px;
-      height: 25px;
+  }
+  @media (max-width: 300px) {
+    & .nav .nav-menu li {
+      margin-left: 15px;
+      font-size: 13px;
     }
   }
 }

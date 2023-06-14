@@ -98,22 +98,22 @@
           Стабильно получайте высокие оценки пользователей за все проекты !
         </div>
         <div class="article article-hidden" id="content-3content-3content-3">
-          <div class="article-img"><img src="./imges/article-img/1.jpg" alt="Была организация какая-то. И многие работники брали взятки, воровали. А один был честным, не воровал, да взятки не брал. Однажды пришла полиция и того честного арестовали. Он откупиться не смог.&#128557;&#128514;" ></div>
-          <div class="article-img"><img src="./imges/article-img/2.jpg" alt="Синоптики обещают, что лето будет малоснежным.&#9728;" ></div>
-          <div class="article-img"><img src="./imges/article-img/3.jpg" alt="𓃰" ></div>
-          <div class="article-img"><img src="./imges/article-img/4.jpg" alt="День, когда вы сажаете семя, - это не тот день, когда вы едите плод." ></div>
-          <div class="article-img"><img src="./imges/article-img/5.jpg" alt="&#9829;&#9829;" ></div>
-          <div class="article-img"><img src="./imges/article-img/6.jpg" alt="" ></div>
-          <div class="article-img"><img src="./imges/article-img/7.jpg" alt="Кому как, но я не полагаюсь на соц. сети. Так, как если я оттуда исчезну в один день, мне на это будет глубоко пофиг. На качество жизни не скажется.&#129335;" ></div>
-          <div class="article-img"><img src="./imges/article-img/8.jpg" alt=" Раньше я страдал от топографического кретинизма. Ну реально, я плохо запоминал дорогу, буквально пара поворотов в новой локации и я терял направление откуда я шел. После моих путешествий этот недуг прошел. Я порой сам удивляюсь, как так запомнил дорогу. Это еще раз доказывает, что любой навык можно прокачать как в игре. Теперь мой мозг на автомате запоминает детали и знает в какую сторону нужно идти ( в сторону деняк)&#128540;" ></div>
-          <div class="article-img"><img src="./imges/article-img/9.jpg" alt="Кто уснул на ложе лени, тот проснется в долине сожалений." ></div>
-          <div class="article-img"><img src="./imges/article-img/10.jpg" alt="con Piccolo." ></div>
-          <div class="article-img"><img src="./imges/article-img/11.jpg" alt="Ты приезжай один, мы тоже одни приедем.&#128514;" ></div>
-          <div class="article-img"><img src="./imges/article-img/12.jpg" alt="Мы всегда были счастливы, каждый день нашей жизни..." ></div>
-          <div class="article-img"><img src="./imges/article-img/13.jpg" alt="На кривых корнях, деревья стоят крепче." ></div>
-          <div class="article-img"><img src="./imges/article-img/14.jpg" alt="Роднойлор." ></div>
-          <div class="article-img"><img src="./imges/article-img/15.jpg" alt="С сыном." ></div>
-          <div class="article-img"><img src="./imges/article-img/16.jpg" alt="Get your priorities right." ></div>
+          <div class="article-img"><img src="./imges/article-img/1.jpg" onclick="openModal();currentSlide(1)" alt="" ></div>
+          <div class="article-img"><img src="./imges/article-img/2.jpg" onclick="openModal();currentSlide(2)" alt="" ></div>
+          <div class="article-img"><img src="./imges/article-img/3.jpg" onclick="openModal();currentSlide(3)" alt="" ></div>
+          <div class="article-img"><img src="./imges/article-img/4.jpg" onclick="openModal();currentSlide(4)" alt="" ></div>
+          <div class="article-img"><img src="./imges/article-img/5.jpg" onclick="openModal();currentSlide(5)" alt="" ></div>
+          <div class="article-img"><img src="./imges/article-img/6.jpg" onclick="openModal();currentSlide(6)" alt="" ></div>
+          <div class="article-img"><img src="./imges/article-img/7.jpg" onclick="openModal();currentSlide(7)" alt="" ></div>
+          <div class="article-img"><img src="./imges/article-img/8.jpg" onclick="openModal();currentSlide(8)" alt="" ></div>
+          <div class="article-img"><img src="./imges/article-img/9.jpg" onclick="openModal();currentSlide(9)" alt="" ></div>
+          <div class="article-img"><img src="./imges/article-img/10.jpg" onclick="openModal();currentSlide(10)" alt="" ></div>
+          <div class="article-img"><img src="./imges/article-img/11.jpg" onclick="openModal();currentSlide(11)" alt="" ></div>
+          <div class="article-img"><img src="./imges/article-img/12.jpg" onclick="openModal();currentSlide(12)" alt="" ></div>
+          <div class="article-img"><img src="./imges/article-img/13.jpg" onclick="openModal();currentSlide(13)" alt="" ></div>
+          <div class="article-img"><img src="./imges/article-img/14.jpg" onclick="openModal();currentSlide(14)" alt="" ></div>
+          <div class="article-img"><img src="./imges/article-img/15.jpg" onclick="openModal();currentSlide(15)" alt="" ></div>
+          <div class="article-img"><img src="./imges/article-img/16.jpg" onclick="openModal();currentSlide(16)" alt="" ></div>
 
         </div>
         <address>
@@ -226,12 +226,144 @@
     </footer>
     <!-- footer end -->
     <!-- modal start -->
-    <div class="modal">
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&#10006;</span>
       <div class="modal-content">
-        <button class="modal-button">✖</button>
-        <img />
+    
+        <div class="mySlides">
+          <div class="numbertext">1 / 16</div>
+          <img src="./imges/article-img/1.jpg" style="width:100%">
+          <div class="modal-caption">
+            Была организация какая-то. И многие работники брали взятки, воровали. А один был честным, не воровал, да взятки не брал. Однажды пришла полиция и того честного арестовали. Он откупиться не смог.&#128557;&#128514;
+          </div>
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 16</div>
+          <img src="./imges/article-img/2.jpg" style="width:100%">
+                    <div class="modal-caption">
+                      Синоптики обещают, что лето будет малоснежным.&#9728;
+          </div>
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">3 / 16</div>
+          <img src="./imges/article-img/3.jpg" style="width:100%">
+                    <div class="modal-caption">
+                      𓃰
+          </div>
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 16</div>
+          <img src="./imges/article-img/4.jpg" style="width:100%">
+                    <div class="modal-caption">
+                      День, когда вы сажаете семя, - это не тот день, когда вы едите плод.
+          </div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 16</div>
+          <img src="./imges/article-img/5.jpg" style="width:100%">
+                    <div class="modal-caption">
+                      &#9829;&#9829;
+          </div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 16</div>
+          <img src="./imges/article-img/6.jpg" style="width:100%">
+                    <div class="modal-caption">
+                    
+          </div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">7 / 16</div>
+          <img src="./imges/article-img/7.jpg" style="width:100%">
+                    <div class="modal-caption">
+                      Кому как, но я не полагаюсь на соц. сети. Так, как если я оттуда исчезну в один день, мне на это будет глубоко пофиг. На качество жизни не скажется.&#129335;
+          </div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">8 / 16</div>
+          <img src="./imges/article-img/8.jpg" style="width:100%">
+                    <div class="modal-caption">
+                      Раньше я страдал от топографического кретинизма. Ну реально, я плохо запоминал дорогу, буквально пара поворотов в новой локации и я терял направление откуда я шел. После моих путешествий этот недуг прошел. Я порой сам удивляюсь, как так запомнил дорогу. Это еще раз доказывает, что любой навык можно прокачать как в игре. Теперь мой мозг на автомате запоминает детали и знает в какую сторону нужно идти ( в сторону деняк)&#128540;
+          </div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">9 / 16</div>
+          <img src="./imges/article-img/9.jpg" style="width:100%">
+                    <div class="modal-caption">
+                      Кто уснул на ложе лени, тот проснется в долине сожалений.
+          </div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">10 / 16</div>
+          <img src="./imges/article-img/10.jpg" style="width:100%">
+                    <div class="modal-caption">
+                      con Piccolo.
+          </div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">11 / 16</div>
+          <img src="./imges/article-img/11.jpg" style="width:100%">
+                    <div class="modal-caption">
+                      Ты приезжай один, мы тоже одни приедем.&#128514;
+          </div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">12 / 16</div>
+          <img src="./imges/article-img/12.jpg" style="width:100%">
+                    <div class="modal-caption">
+                      Мы всегда были счастливы, каждый день нашей жизни...
+          </div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">13 / 16</div>
+          <img src="./imges/article-img/13.jpg" style="width:100%">
+                    <div class="modal-caption">
+                      На кривых корнях, деревья стоят крепче.
+          </div>
+        </div>
+
+
+        <div class="mySlides">
+          <div class="numbertext">14 / 16</div>
+          <img src="./imges/article-img/14.jpg" style="width:100%">
+                    <div class="modal-caption">
+                      Роднойлор.
+          </div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">15 / 16</div>
+          <img src="./imges/article-img/15.jpg" style="width:100%">
+                    <div class="modal-caption">
+                      С сыном.
+          </div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">16 / 16</div>
+          <img src="./imges/article-img/16.jpg" style="width:100%">
+                    <div class="modal-caption">
+                      Get your priorities right.
+          </div>
+        </div>
+
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    
       </div>
-      <p class="modal-caption"></p>
     </div>
     <!-- modal end -->
     <script src="./new-project.js"></script>

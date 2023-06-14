@@ -23,6 +23,10 @@ body {
   background-size: cover;
   scroll-behavior: smooth;
   row-gap: 20px;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 }
 * {
   padding: 0px;
